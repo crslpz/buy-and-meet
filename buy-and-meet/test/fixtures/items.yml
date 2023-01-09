@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  item_description: MyString
+  condition: MyString
+  asking_price: 1
+  negotiable: 
+
+two:
+  title: MyString
+  item_description: MyString
+  condition: MyString
+  asking_price: 1
+  negotiable: 
