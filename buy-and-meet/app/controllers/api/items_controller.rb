@@ -28,7 +28,7 @@ class Api::ItemsController < ApplicationController
     end
 
     def destroy
-        @item = Annotation.find(params[:id])
+        @item = Item.find(params[:id])
         if @item.destroy
             render 'api/items/show'
         else
