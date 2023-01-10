@@ -8,7 +8,7 @@ class Api::ItemsController < ApplicationController
    
 
     def create
-        @items = Item.new(items_params)
+        @items = Item.new(item_params)
         @items.user_id = currentUser.id
         if items.save
             render'/api/items/show'
@@ -21,7 +21,7 @@ class Api::ItemsController < ApplicationController
       @item = Item.find_by(:id params[:id])
 
       if @item.update(item_params)
-         redirect_to :show
+        redirect_to :show
       else 
          render json: @item.errors.full_messages, status: unprocessable_entity
       end
