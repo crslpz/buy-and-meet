@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  get 'items/index'
-  get 'items/create'
-  get 'items/update'
-  get 'items/desstroy'
-  get 'items/show'
+  # get 'items/index'
+  # get 'items/create'
+  # get 'items/update'
+  # get 'items/desstroy'
+  # get 'items/show'
   root to: 'static_pages#root'
 
   namespace :api, defaults: {format: JSON} do

@@ -13,6 +13,12 @@ class UsersController < ApplicationController
       @users = User.all
     end
     
+    def show
+      @user = User.find_by(id: params[:id])
+      #if the user was found
+      
+    end
+
     def destroy
       @user = User.find(params[:id])
 
