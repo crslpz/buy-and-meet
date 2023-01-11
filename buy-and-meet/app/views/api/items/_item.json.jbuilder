@@ -1,0 +1,1 @@
+json.extract! item, :id, :title, :item_description, :condition, :asking_price , :negotiable, :user_id

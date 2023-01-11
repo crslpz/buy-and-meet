@@ -11,6 +11,10 @@ class User < ApplicationRecord
     foreign_key: :user_id,
     class_name: 'Items'
 
+    has_many :conversations,
+    foreign_key: :user_id,
+    class_name: "Conversations"
+
 
     
     def self.find_by_credentials(email, password)
