@@ -1,4 +1,4 @@
-export const fetchAllItems = () => {
+export const getItems = () => {
    return $.ajax({
       method: "GET",
       url: 'api/items'
@@ -13,10 +13,18 @@ export const createItem = (itemData) => {
    })
 };
 
-export const fetchAItem = (itemId) => {
+export const getItem = (itemId) => {
    return $.ajax({
       method: 'get',
       url: `/api/items/${itemId}`
+   })
+};
+
+export const editItem = (itemData, itemId) => {
+   return $.ajax({
+      method: 'patch',
+      url: `/api/items/${itemId}`,
+      itemData
    })
 };
 

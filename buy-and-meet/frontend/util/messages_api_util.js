@@ -3,13 +3,13 @@ export const fetchMessages = (userId) => {
         method: 'GET',
         url: `/api/${userId}/messages`
     })
-}
+};
 
 export const fetchMessage = messageId => {
     return $.ajax({
         method: 'GET'
     })
-}
+};
 
 export const createMessage = (message) => dispatch => {
     return $.ajax({
@@ -17,4 +17,4 @@ export const createMessage = (message) => dispatch => {
         url:'api/messages',
         data: {messages}
     })
-}
+};
